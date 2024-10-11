@@ -1,0 +1,14 @@
+# Ignore Firebase config with real API keys
+firebase-config.js
+
+# Ignore .env file with environment variables
+.env
+
+# Ignore node_modules if you're using npm
+node_modules/
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore log files
+*.log
