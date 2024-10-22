@@ -150,7 +150,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #297fb900;
 }
 
 #googleSignIn {
@@ -168,3 +168,26 @@ button:hover {
 .btn-secondary:hover {
     background-color: #27ae60;
 }
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption a {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.carousel-inner img {
+    max-height: 100vh;
+    object-fit: cover;
+    }
+
+.footer-bg {
+    background-color: #343a40;
+    }

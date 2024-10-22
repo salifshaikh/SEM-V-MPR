@@ -3,55 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - EduLift Basic</title>
+    <title>LegalEase - Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="scholarship.html">Scholarship</a></li>
-                <li><a href="resources.html"  class="active">Resources</a></li>
+                <li><a href="about.html">Lawyers</a></li>
+                <li><a href="courses.html">Information</a></li>
+                <li><a href="resources.html"  class="active">Contact Us</a></li>
                 <li><a href="#" id="loginBtn">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div>
-                <h1>About EduLift Basic</h1>
-                <p>Empowering minds, transforming lives</p>
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Feedback</label>
+                        <textarea class="form-control" id="feedback" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </section>
-
-        <section class="content-section">
-            <h2>Our Mission</h2>
-            <p>At EduLift Basic, we believe that education is the cornerstone of personal and societal growth. Our mission is to provide accessible, high-quality educational resources to learners around the globe, regardless of their background or circumstances.</p>
-            <p>We strive to create an inclusive learning environment that fosters curiosity, critical thinking, and lifelong learning. Through our diverse range of courses, scholarship programs, and educational resources, we aim to empower individuals to reach their full potential and make a positive impact on the world.</p>
-        </section>
-
-        <section class="content-section">
-            <h2>Our Values</h2>
-            <ul>
-                <li><strong>Accessibility:</strong> We believe that quality education should be available to everyone.</li>
-                <li><strong>Innovation:</strong> We continuously adapt our methods and content to meet the evolving needs of learners.</li>
-                <li><strong>Excellence:</strong> We are committed to providing the highest quality educational experiences.</li>
-                <li><strong>Community:</strong> We foster a supportive and collaborative learning environment.</li>
-                <li><strong>Diversity:</strong> We celebrate and embrace diverse perspectives and experiences.</li>
-            </ul>
-        </section>
-
-        <section class="content-section">
-            <h2>Join Us in Our Journey</h2>
-            <p>Whether you're a student, educator, or lifelong learner, we invite you to join the EduLift Basic community. Together, we can create a brighter future through the power of education.</p>
-            <button class="btn-secondary">Get Started Today</button>
+    
+        <section id="faq" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions (FAQ)</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is LegalEase?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                LegalEase is a platform dedicated to providing top-notch civil litigation services with a team of experienced lawyers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I contact LegalEase?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact us via email at info@legalease.com or call us at +1 (234) 567-890. You can also fill out the contact form on our website.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What services does LegalEase provide?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                LegalEase provides a variety of civil litigation services including dispute resolution, contract law, property disputes, and more.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Is there any fee to use this website?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                LegalEase is a completely free website to assist common people about legal terms.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>LegalEase is dedicated to providing top-notch civil litigation services. Our team of experienced lawyers is here to help you with all your legal needs.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="about.html" class="text-white">Lawyers</a></li>
+                            <li><a href="courses.html" class="text-white">Information</a></li>
+                            <li><a href="resources.html" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: <a href="mailto:info@legalease.com" class="text-white">info@legalease.com</a></li>
+                            <li>Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></li>
+                            <li class="mt-2">
+                                Follow us:
+                                <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p>&copy; 2024 LegalEase. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
