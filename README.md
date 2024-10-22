@@ -1,4 +1,4 @@
-# EduLift Basic Firebase template
+# LegalEase
 
 ## Setup
 
